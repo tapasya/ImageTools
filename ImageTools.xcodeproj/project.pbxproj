@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F10158C15F4721C00ABD189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F10158B15F4721C00ABD189 /* Foundation.framework */; };
+		0F10159115F4721C00ABD189 /* ImageTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F10159015F4721C00ABD189 /* ImageTools.h */; };
+		0F10159315F4721C00ABD189 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10159215F4721C00ABD189 /* ImageTools.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F10158615F4721C00ABD189 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				0F10159115F4721C00ABD189 /* ImageTools.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F10158815F4721C00ABD189 /* libImageTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F10158B15F4721C00ABD189 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F10158F15F4721C00ABD189 /* ImageTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageTools-Prefix.pch"; sourceTree = "<group>"; };
+		0F10159015F4721C00ABD189 /* ImageTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
+		0F10159215F4721C00ABD189 /* ImageTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTools.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F10158515F4721C00ABD189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F10158C15F4721C00ABD189 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F10157D15F4721C00ABD189 = {
+			isa = PBXGroup;
+			children = (
+				0F10158D15F4721C00ABD189 /* ImageTools */,
+				0F10158A15F4721C00ABD189 /* Frameworks */,
+				0F10158915F4721C00ABD189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F10158915F4721C00ABD189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F10158815F4721C00ABD189 /* libImageTools.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F10158A15F4721C00ABD189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F10158B15F4721C00ABD189 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F10158D15F4721C00ABD189 /* ImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				0F10159015F4721C00ABD189 /* ImageTools.h */,
+				0F10159215F4721C00ABD189 /* ImageTools.m */,
+				0F10158E15F4721C00ABD189 /* Supporting Files */,
+			);
+			path = ImageTools;
+			sourceTree = "<group>";
+		};
+		0F10158E15F4721C00ABD189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F10158F15F4721C00ABD189 /* ImageTools-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F10158715F4721C00ABD189 /* ImageTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F10159615F4721C00ABD189 /* Build configuration list for PBXNativeTarget "ImageTools" */;
+			buildPhases = (
+				0F10158415F4721C00ABD189 /* Sources */,
+				0F10158515F4721C00ABD189 /* Frameworks */,
+				0F10158615F4721C00ABD189 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageTools;
+			productName = ImageTools;
+			productReference = 0F10158815F4721C00ABD189 /* libImageTools.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F10157F15F4721C00ABD189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 0F10158215F4721C00ABD189 /* Build configuration list for PBXProject "ImageTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F10157D15F4721C00ABD189;
+			productRefGroup = 0F10158915F4721C00ABD189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F10158715F4721C00ABD189 /* ImageTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F10158415F4721C00ABD189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F10159315F4721C00ABD189 /* ImageTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F10159415F4721C00ABD189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F10159515F4721C00ABD189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F10159715F4721C00ABD189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ImageTools.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageTools/ImageTools-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0F10159815F4721C00ABD189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ImageTools.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageTools/ImageTools-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F10158215F4721C00ABD189 /* Build configuration list for PBXProject "ImageTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F10159415F4721C00ABD189 /* Debug */,
+				0F10159515F4721C00ABD189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F10159615F4721C00ABD189 /* Build configuration list for PBXNativeTarget "ImageTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F10159715F4721C00ABD189 /* Debug */,
+				0F10159815F4721C00ABD189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F10157F15F4721C00ABD189 /* Project object */;
+}
