@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F10166B15F4AFCC00ABD189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F10166A15F4AFCC00ABD189 /* UIKit.framework */; };
+		0F10166D15F4AFCC00ABD189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F10166C15F4AFCC00ABD189 /* Foundation.framework */; };
+		0F10166F15F4AFCC00ABD189 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F10166E15F4AFCC00ABD189 /* CoreGraphics.framework */; };
+		0F10167515F4AFCC00ABD189 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F10167315F4AFCC00ABD189 /* InfoPlist.strings */; };
+		0F10167715F4AFCC00ABD189 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10167615F4AFCC00ABD189 /* main.m */; };
+		0F10167B15F4AFCC00ABD189 /* ITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10167A15F4AFCC00ABD189 /* ITAppDelegate.m */; };
+		0F10167E15F4AFCC00ABD189 /* ITViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10167D15F4AFCC00ABD189 /* ITViewController.m */; };
+		0F10169415F4B30900ABD189 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F10169315F4B30900ABD189 /* CoreImage.framework */; };
+		0F10169615F4B4ED00ABD189 /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F10169515F4B4ED00ABD189 /* image.jpeg */; };
+		0F1016F215F612AB00ABD189 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1016F115F612AB00ABD189 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FFB044015F78BCD00CF72E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0F10158815F4721C00ABD189;
+			remoteInfo = ImageTools;
+		};
+		0FFB044215F78D0800CF72E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F10159D15F4742D00ABD189;
+			remoteInfo = "ImageTools-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F10166615F4AFCB00ABD189 /* ImageToolsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageToolsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F10166A15F4AFCC00ABD189 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F10166C15F4AFCC00ABD189 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F10166E15F4AFCC00ABD189 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F10167215F4AFCC00ABD189 /* ImageToolsSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageToolsSample-Info.plist"; sourceTree = "<group>"; };
+		0F10167415F4AFCC00ABD189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F10167615F4AFCC00ABD189 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F10167815F4AFCC00ABD189 /* ImageToolsSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageToolsSample-Prefix.pch"; sourceTree = "<group>"; };
+		0F10167915F4AFCC00ABD189 /* ITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITAppDelegate.h; sourceTree = "<group>"; };
+		0F10167A15F4AFCC00ABD189 /* ITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITAppDelegate.m; sourceTree = "<group>"; };
+		0F10167C15F4AFCC00ABD189 /* ITViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITViewController.h; sourceTree = "<group>"; };
+		0F10167D15F4AFCC00ABD189 /* ITViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITViewController.m; sourceTree = "<group>"; };
+		0F10169315F4B30900ABD189 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0F10169515F4B4ED00ABD189 /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		0F1016F115F612AB00ABD189 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageTools.xcodeproj; path = ../../ImageTools.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F10166315F4AFCB00ABD189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1016F215F612AB00ABD189 /* AssetsLibrary.framework in Frameworks */,
+				0F10169415F4B30900ABD189 /* CoreImage.framework in Frameworks */,
+				0F10166B15F4AFCC00ABD189 /* UIKit.framework in Frameworks */,
+				0F10166D15F4AFCC00ABD189 /* Foundation.framework in Frameworks */,
+				0F10166F15F4AFCC00ABD189 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F10165B15F4AFCB00ABD189 = {
+			isa = PBXGroup;
+			children = (
+				0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */,
+				0F10167015F4AFCC00ABD189 /* ImageToolsSample */,
+				0F10166915F4AFCC00ABD189 /* Frameworks */,
+				0F10166715F4AFCB00ABD189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F10166715F4AFCB00ABD189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F10166615F4AFCB00ABD189 /* ImageToolsSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F10166915F4AFCC00ABD189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1016F115F612AB00ABD189 /* AssetsLibrary.framework */,
+				0F10169315F4B30900ABD189 /* CoreImage.framework */,
+				0F10166A15F4AFCC00ABD189 /* UIKit.framework */,
+				0F10166C15F4AFCC00ABD189 /* Foundation.framework */,
+				0F10166E15F4AFCC00ABD189 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F10167015F4AFCC00ABD189 /* ImageToolsSample */ = {
+			isa = PBXGroup;
+			children = (
+				0F10167915F4AFCC00ABD189 /* ITAppDelegate.h */,
+				0F10167A15F4AFCC00ABD189 /* ITAppDelegate.m */,
+				0F10167C15F4AFCC00ABD189 /* ITViewController.h */,
+				0F10167D15F4AFCC00ABD189 /* ITViewController.m */,
+				0F10167115F4AFCC00ABD189 /* Supporting Files */,
+			);
+			path = ImageToolsSample;
+			sourceTree = "<group>";
+		};
+		0F10167115F4AFCC00ABD189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F10169515F4B4ED00ABD189 /* image.jpeg */,
+				0F10167215F4AFCC00ABD189 /* ImageToolsSample-Info.plist */,
+				0F10167315F4AFCC00ABD189 /* InfoPlist.strings */,
+				0F10167615F4AFCC00ABD189 /* main.m */,
+				0F10167815F4AFCC00ABD189 /* ImageToolsSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FFB043915F78BCC00CF72E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FFB044115F78BCD00CF72E0 /* libImageTools.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F10166515F4AFCB00ABD189 /* ImageToolsSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F10168715F4AFCC00ABD189 /* Build configuration list for PBXNativeTarget "ImageToolsSample" */;
+			buildPhases = (
+				0F10166215F4AFCB00ABD189 /* Sources */,
+				0F10166315F4AFCB00ABD189 /* Frameworks */,
+				0F10166415F4AFCB00ABD189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FFB044315F78D0800CF72E0 /* PBXTargetDependency */,
+			);
+			name = ImageToolsSample;
+			productName = ImageToolsSample;
+			productReference = 0F10166615F4AFCB00ABD189 /* ImageToolsSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F10165D15F4AFCB00ABD189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IT;
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 0F10166015F4AFCB00ABD189 /* Build configuration list for PBXProject "ImageToolsSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F10165B15F4AFCB00ABD189;
+			productRefGroup = 0F10166715F4AFCB00ABD189 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0FFB043915F78BCC00CF72E0 /* Products */;
+					ProjectRef = 0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0F10166515F4AFCB00ABD189 /* ImageToolsSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0FFB044115F78BCD00CF72E0 /* libImageTools.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libImageTools.a;
+			remoteRef = 0FFB044015F78BCD00CF72E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F10166415F4AFCB00ABD189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F10167515F4AFCC00ABD189 /* InfoPlist.strings in Resources */,
+				0F10169615F4B4ED00ABD189 /* image.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F10166215F4AFCB00ABD189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F10167715F4AFCC00ABD189 /* main.m in Sources */,
+				0F10167B15F4AFCC00ABD189 /* ITAppDelegate.m in Sources */,
+				0F10167E15F4AFCC00ABD189 /* ITViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FFB044315F78D0800CF72E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ImageTools-iOS";
+			targetProxy = 0FFB044215F78D0800CF72E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F10167315F4AFCC00ABD189 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F10167415F4AFCC00ABD189 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F10168515F4AFCC00ABD189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F10168615F4AFCC00ABD189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F10168815F4AFCC00ABD189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../DerivedData/ImageTools/Build/Products/Release-iphoneuniversal\"",
+					"\"$(SRCROOT)/DerivedData/ImageToolsSample/Build/Products/Release-iphoneuniversal\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageToolsSample/ImageToolsSample-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/DerivedData/ImageToolsSample/Build/Products/Release-iphoneuniversal/ImageTools.framework/Versions/A/Headers/\"";
+				INFOPLIST_FILE = "ImageToolsSample/ImageToolsSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F10168915F4AFCC00ABD189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../DerivedData/ImageTools/Build/Products/Release-iphoneuniversal\"",
+					"\"$(SRCROOT)/DerivedData/ImageToolsSample/Build/Products/Release-iphoneuniversal\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageToolsSample/ImageToolsSample-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/DerivedData/ImageToolsSample/Build/Products/Release-iphoneuniversal/ImageTools.framework/Versions/A/Headers/\"";
+				INFOPLIST_FILE = "ImageToolsSample/ImageToolsSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F10166015F4AFCB00ABD189 /* Build configuration list for PBXProject "ImageToolsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F10168515F4AFCC00ABD189 /* Debug */,
+				0F10168615F4AFCC00ABD189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F10168715F4AFCC00ABD189 /* Build configuration list for PBXNativeTarget "ImageToolsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F10168815F4AFCC00ABD189 /* Debug */,
+				0F10168915F4AFCC00ABD189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F10165D15F4AFCB00ABD189 /* Project object */;
+}
