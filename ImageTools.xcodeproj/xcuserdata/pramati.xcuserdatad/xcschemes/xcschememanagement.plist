@@ -4,13 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ImageTools-iOS.xcscheme</key>
+		<key>ITools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ImageTools-Framework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
+		</dict>
+		<key>ImageTools-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>ImageTools.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -28,6 +44,16 @@
 			<true/>
 		</dict>
 		<key>0F1015C415F4820F00ABD189</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FB4972515F88645009FBB28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FB4976415F89C75009FBB28</key>
 		<dict>
 			<key>primary</key>
 			<true/>

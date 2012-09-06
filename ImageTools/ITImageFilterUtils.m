@@ -15,7 +15,6 @@
 + (NSArray *) FilterDictionaryForFilters: (NSArray *)names
 {
     NSMutableArray       *temp;
-    NSMutableDictionary  *catDict;
     NSString             *classname;
     int                   i;
     

@@ -17,22 +17,30 @@
 		0F10169415F4B30900ABD189 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F10169315F4B30900ABD189 /* CoreImage.framework */; };
 		0F10169615F4B4ED00ABD189 /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F10169515F4B4ED00ABD189 /* image.jpeg */; };
 		0F1016F215F612AB00ABD189 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1016F115F612AB00ABD189 /* AssetsLibrary.framework */; };
+		0FB497A315F8B2D3009FBB28 /* ITools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB497A215F8B2D3009FBB28 /* ITools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0FFB044015F78BCD00CF72E0 /* PBXContainerItemProxy */ = {
+		0FB4979B15F8B1E4009FBB28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */;
+			containerPortal = 0FB4979115F8B1E4009FBB28 /* ImageTools.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0F10158815F4721C00ABD189;
 			remoteInfo = ImageTools;
 		};
-		0FFB044215F78D0800CF72E0 /* PBXContainerItemProxy */ = {
+		0FB4979D15F8B1E4009FBB28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */;
+			containerPortal = 0FB4979115F8B1E4009FBB28 /* ImageTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0FB4972615F88645009FBB28;
+			remoteInfo = ITools;
+		};
+		0FB4979F15F8B207009FBB28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FB4979115F8B1E4009FBB28 /* ImageTools.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 0F10159D15F4742D00ABD189;
-			remoteInfo = "ImageTools-iOS";
+			remoteGlobalIDString = 0FB4976415F89C75009FBB28;
+			remoteInfo = "ImageTools-Framework";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,7 +60,8 @@
 		0F10169315F4B30900ABD189 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0F10169515F4B4ED00ABD189 /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
 		0F1016F115F612AB00ABD189 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageTools.xcodeproj; path = ../../ImageTools.xcodeproj; sourceTree = "<group>"; };
+		0FB4979115F8B1E4009FBB28 /* ImageTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageTools.xcodeproj; path = ../ImageTools.xcodeproj; sourceTree = "<group>"; };
+		0FB497A215F8B2D3009FBB28 /* ITools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ITools.framework; path = ../Products/ITools.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB497A315F8B2D3009FBB28 /* ITools.framework in Frameworks */,
 				0F1016F215F612AB00ABD189 /* AssetsLibrary.framework in Frameworks */,
 				0F10169415F4B30900ABD189 /* CoreImage.framework in Frameworks */,
 				0F10166B15F4AFCC00ABD189 /* UIKit.framework in Frameworks */,
@@ -74,7 +84,7 @@
 		0F10165B15F4AFCB00ABD189 = {
 			isa = PBXGroup;
 			children = (
-				0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */,
+				0FB4979115F8B1E4009FBB28 /* ImageTools.xcodeproj */,
 				0F10167015F4AFCC00ABD189 /* ImageToolsSample */,
 				0F10166915F4AFCC00ABD189 /* Frameworks */,
 				0F10166715F4AFCB00ABD189 /* Products */,
@@ -92,6 +102,7 @@
 		0F10166915F4AFCC00ABD189 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FB497A215F8B2D3009FBB28 /* ITools.framework */,
 				0F1016F115F612AB00ABD189 /* AssetsLibrary.framework */,
 				0F10169315F4B30900ABD189 /* CoreImage.framework */,
 				0F10166A15F4AFCC00ABD189 /* UIKit.framework */,
@@ -125,10 +136,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0FFB043915F78BCC00CF72E0 /* Products */ = {
+		0FB4979215F8B1E4009FBB28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0FFB044115F78BCD00CF72E0 /* libImageTools.a */,
+				0FB4979C15F8B1E4009FBB28 /* libImageTools.a */,
+				0FB4979E15F8B1E4009FBB28 /* ITools.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +159,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0FFB044315F78D0800CF72E0 /* PBXTargetDependency */,
+				0FB497A015F8B207009FBB28 /* PBXTargetDependency */,
 			);
 			name = ImageToolsSample;
 			productName = ImageToolsSample;
@@ -175,8 +187,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0FFB043915F78BCC00CF72E0 /* Products */;
-					ProjectRef = 0FFB043815F78BCC00CF72E0 /* ImageTools.xcodeproj */;
+					ProductGroup = 0FB4979215F8B1E4009FBB28 /* Products */;
+					ProjectRef = 0FB4979115F8B1E4009FBB28 /* ImageTools.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -187,11 +199,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0FFB044115F78BCD00CF72E0 /* libImageTools.a */ = {
+		0FB4979C15F8B1E4009FBB28 /* libImageTools.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libImageTools.a;
-			remoteRef = 0FFB044015F78BCD00CF72E0 /* PBXContainerItemProxy */;
+			remoteRef = 0FB4979B15F8B1E4009FBB28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0FB4979E15F8B1E4009FBB28 /* ITools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ITools.framework;
+			remoteRef = 0FB4979D15F8B1E4009FBB28 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -222,10 +241,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0FFB044315F78D0800CF72E0 /* PBXTargetDependency */ = {
+		0FB497A015F8B207009FBB28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ImageTools-iOS";
-			targetProxy = 0FFB044215F78D0800CF72E0 /* PBXContainerItemProxy */;
+			name = "ImageTools-Framework";
+			targetProxy = 0FB4979F15F8B207009FBB28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -295,6 +314,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../DerivedData/ImageTools/Build/Products/Release-iphoneuniversal\"",
 					"\"$(SRCROOT)/DerivedData/ImageToolsSample/Build/Products/Release-iphoneuniversal\"",
+					"\"$(SRCROOT)/../../Products\"",
+					"\"$(SRCROOT)/../Products\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageToolsSample/ImageToolsSample-Prefix.pch";
@@ -314,6 +335,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../DerivedData/ImageTools/Build/Products/Release-iphoneuniversal\"",
 					"\"$(SRCROOT)/DerivedData/ImageToolsSample/Build/Products/Release-iphoneuniversal\"",
+					"\"$(SRCROOT)/../../Products\"",
+					"\"$(SRCROOT)/../Products\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageToolsSample/ImageToolsSample-Prefix.pch";

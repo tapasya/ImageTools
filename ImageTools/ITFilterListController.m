@@ -45,7 +45,6 @@
         array = [NSMutableArray arrayWithArray:[CIFilter filterNamesInCategory:kCICategoryStylize]];
         [categories setObject: [PGImageFilterUtils FilterDictionaryForFilters:array] forKey: @"Stylize"];
         
-        /*
         array = [NSMutableArray arrayWithArray: [CIFilter filterNamesInCategory: kCICategoryColorAdjustment]];
         [array addObjectsFromArray:[CIFilter filterNamesInCategory: kCICategoryBlur]];
         [categories setObject:[PGImageFilterUtils FilterDictionaryForFilters:array] forKey:@"Focus"];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Ima>
+#import <ITools/ITFilterListController.h>
 
 @interface ITViewController : UIViewController<ITFilterSelectionDelegate, ITFilterEditorDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
