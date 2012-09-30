@@ -16,16 +16,26 @@
     UITableView* categoriesTableView;
     NSMutableDictionary* categories;
 }
+
+@property (nonatomic , copy) ITFilterSelectionBlock filterSelectionCallbackBlock;
+
+@property (nonatomic, copy) ITFilterEditingBlock editingCallbackBlock;
+
 @end
 
 @implementation ITFilterListController
-@synthesize delegate;
+@synthesize filterSelectionCallbackBlock;
+@synthesize editingCallbackBlock = _editingCallbackBlock;
 
-- (id)initWithFilters:(NSArray*) filtersArray
+- (id)initWithFilters:(NSArray*) filtersArray filterSelectionBlock:(ITFilterSelectionBlock)callbackBlock filterEditingBlock:(ITFilterEditingBlock)editingCallbackBlock
 {
     self = [super init];
     if (self) {
         // Custom initialization
+        self.filterSelectionCallbackBlock = callbackBlock;
+        
+        self.editingCallbackBlock = editingCallbackBlock;
+        
         categories = [[NSMutableDictionary alloc] init];
         [categories setObject: [ITImageFilterUtils FilterDictionaryForFilters:filtersArray] forKey: @"Filters"];
         
@@ -132,23 +142,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{    // Navigation logic may go here. Create and push another view controller.
-    
-    if(self.delegate)
-    {
+{    // Navigation logic may go here. Create and push another view controller.  
+    if(self.filterSelectionCallbackBlock) {
         NSString* category = [[categories allKeys] objectAtIndex:indexPath.section];
         NSArray* catDict = [categories objectForKey:category];
-        ITFilter* filter = [catDict objectAtIndex:indexPath.row];        
-        [self.delegate filterSelected:filter];
+        ITFilter* filter = [catDict objectAtIndex:indexPath.row];
+        
+        ITFilterEditorController* fdc = [[ITFilterEditorController alloc] initWithFilter:filter editingBlock:self.editingCallbackBlock];
+        self.filterSelectionCallbackBlock(fdc);
     }
-    /*
-    NSString* category = [[categories allKeys] objectAtIndex:indexPath.section];
-    NSArray* catDict = [categories objectForKey:category];
-    PGFilter* filter = [catDict objectAtIndex:indexPath.row];
-    PGFilterEditorController* fdc = [[PGFilterEditorController alloc] initWithFilter:filter];
-    fdc.delegate = self.delegate;
-    [self.navigationController pushViewController:fdc animated:YES];
-     */
+
 }
 
 

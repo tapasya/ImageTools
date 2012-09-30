@@ -18,7 +18,7 @@
 @implementation ITImagePickerController
 @synthesize assetGroup=_assetGroup;
 @synthesize assetViews=_assets;
-@synthesize delegate=_delegate;
+@synthesize selectionBlock =_selectionBlock;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -151,9 +151,9 @@
 
 -(void) assetTapped:(ITAssetView *)sender
 {
-    if(self.delegate)
+    if(self.selectionBlock)
     {
-        [self.delegate assetSelected:sender.asset];
+        self.selectionBlock(sender.asset);
     }
 }
 

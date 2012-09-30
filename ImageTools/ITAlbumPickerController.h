@@ -10,5 +10,5 @@
 #import "ITImagePickerController.h"
 
 @interface ITAlbumPickerController : UITableViewController
-@property (nonatomic, assign) id<ITImageSelectionDelegte> delegate;
+@property (nonatomic, copy) ITImageSelectionBlock selectionBlock;
 @end

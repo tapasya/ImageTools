@@ -9,13 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ITFilterEditorController.h"
 
-@protocol ITFilterSelectionDelegate;
+typedef void (^ITFilterSelectionBlock)( ITFilterEditorController* filter);
 
 @interface ITFilterListController : UIViewController<UITableViewDelegate, UITableViewDataSource>
-@property (unsafe_unretained) id <ITFilterSelectionDelegate> delegate;
-- (id)initWithFilters:(NSArray*) filtersArray;
-@end
 
-@protocol ITFilterSelectionDelegate
--(void) filterSelected:(ITFilter*) filter;
+
+- (id)initWithFilters:(NSArray*) filtersArray filterSelectionBlock:(ITFilterSelectionBlock) callbackBlock filterEditingBlock:(ITFilterEditingBlock) editingCallbackBlock;
+
 @end

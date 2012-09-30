@@ -24,7 +24,7 @@
     {
         classname = [names objectAtIndex:i];
         ITFilter* filter = [[ITFilter alloc] initWithFilter:classname];
-        if(filter)
+        if(filter && [[filter editableProperties] count] > 0)
             [temp addObject:filter];        
         else
             NSLog(@" No attributes for '%@' filter", classname);

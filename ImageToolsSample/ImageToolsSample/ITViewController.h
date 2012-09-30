@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <ITools/ITFilterListController.h>
 
-@interface ITViewController : UIViewController<ITFilterSelectionDelegate, ITFilterEditorDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ITViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @end

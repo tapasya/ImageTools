@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@protocol ITImageSelectionDelegte;
+typedef void (^ ITImageSelectionBlock) (ALAsset* asset);
 
 @interface ITImagePickerController : UITableViewController
+
 @property (nonatomic, assign) ALAssetsGroup *assetGroup;
-@property (nonatomic, assign) id<ITImageSelectionDelegte> delegate;
+
+@property (nonatomic, copy) ITImageSelectionBlock selectionBlock;
+
 @end
 
-@protocol ITImageSelectionDelegte
--(void) assetSelected:(ALAsset*) asset;
-@end
