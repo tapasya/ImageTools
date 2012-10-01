@@ -14,7 +14,6 @@
     UIPopoverController* popoverController;
     UIImageView* editImageView;
     UIImage* editImage;
-    CIContext* context;
 }
 
 @end
@@ -82,50 +81,41 @@
         popoverController = nil;
     }
     
+    ITFilterEditingBlock editingBlock = ^(UIImage* image){
+        editImageView.image = image;
+    };
+
+    ITFilterSelectionBlock callbackBlock = ^(ITFilterEditorController* fdc){
+        if(popoverController)
+        {
+            [popoverController dismissPopoverAnimated:NO];
+            popoverController = nil;
+        }
+        
+        // ADD apply and discard buttons buttons 
+        fdc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(discardFilter)];
+        
+        fdc.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(applyFilter)];
+        
+        
+        fdc.inputImageSize = editImage.size;
+        fdc.inputImage = editImage;
+        
+        UINavigationController* nvc = [[UINavigationController alloc] initWithRootViewController:fdc];
+        
+        popoverController= [[UIPopoverController alloc] initWithContentViewController:nvc];
+        
+        [popoverController presentPopoverFromBarButtonItem:self.navigationItem.rightBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    };
+    
     //initialize image picker and add to popover controller
-    ITFilterListController* fxController = [[ITFilterListController alloc] initWithFilters:[NSMutableArray arrayWithArray:[CIFilter filterNamesInCategory:kCICategoryBuiltIn]]];
-    fxController.delegate = self;
+    ITFilterListController* fxController = [[ITFilterListController alloc] initWithFilters:[NSMutableArray arrayWithArray:[CIFilter filterNamesInCategory:kCICategoryBuiltIn]] filterSelectionBlock:callbackBlock filterEditingBlock:editingBlock];
+    
     UINavigationController* rootController = [[UINavigationController alloc] initWithRootViewController:fxController];
-	popoverController= [[UIPopoverController alloc] initWithContentViewController:rootController];
-	[popoverController presentPopoverFromBarButtonItem:galleryButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-}
-
--(void) filterSelected:(ITFilter*)filter
-{
-    if(popoverController)
-    {
-        [popoverController dismissPopoverAnimated:NO];
-        popoverController = nil;
-    }
-    
-    ITFilterEditorController* fdc = [[ITFilterEditorController alloc] initWithFilter:filter];
-    fdc.delegate = self;
-    fdc.inputImageSize = editImage.size;
-    UINavigationController* nvc = [[UINavigationController alloc] initWithRootViewController:fdc];
-    popoverController= [[UIPopoverController alloc] initWithContentViewController:nvc];
-    popoverController.popoverContentSize = CGSizeMake(320, 480);
-	[popoverController presentPopoverFromRect:CGRectMake(self.view.frame.size.width, 0, 20, 20) inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:NO];
-}
-
--(void) filterValueChanged:(ITFilter *) pgFilter forKey:(NSString *)key
-{
-    CIFilter* filter = pgFilter.ciFilter;
-    CIImage* beginImage = [[CIImage alloc] initWithImage:editImage];
-    [filter setValue:beginImage forKey:kCIInputImageKey];
-    //[filter setValue:value forKey:key];
-    
-    if(!context)
-        context = [CIContext contextWithOptions:nil];
-    
-    CIImage *outputImage = [filter outputImage];
-    CGImageRef cgimg = [context createCGImage:outputImage fromRect:[outputImage extent]];
-    UIImage *newImg = [UIImage imageWithCGImage:cgimg];
-    
-    //editImage = newImg;
-    [editImageView setImage:newImg];
-    
-    CGImageRelease(cgimg);
-    [filter setValue:nil forKey:kCIInputImageKey];
+	
+    popoverController= [[UIPopoverController alloc] initWithContentViewController:rootController];
+	
+    [popoverController presentPopoverFromBarButtonItem:galleryButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 -(void) applyFilter

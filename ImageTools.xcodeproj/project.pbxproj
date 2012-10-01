@@ -74,6 +74,8 @@
 		0F10178E15F7610C00ABD189 /* ITAlbumPickerController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F1016D715F6064C00ABD189 /* ITAlbumPickerController.h */; };
 		0F10178F15F7610C00ABD189 /* ITImagePickerController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F1016DA15F607D400ABD189 /* ITImagePickerController.h */; };
 		0F10179015F7610C00ABD189 /* ImageTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F10174415F756E500ABD189 /* ImageTools.h */; };
+		0F7DA04C1615DDAB00A1BFB0 /* ITFilterAttributeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB497C115F8BD32009FBB28 /* ITFilterAttributeCell.m */; };
+		0F7DA04E1615DDB800A1BFB0 /* ITFilterAttributeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB497C015F8BD32009FBB28 /* ITFilterAttributeCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FB4972815F88645009FBB28 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB4972715F88645009FBB28 /* CoreFoundation.framework */; };
 		0FB4972E15F88645009FBB28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FB4972C15F88645009FBB28 /* InfoPlist.strings */; };
 		0FB4974915F89B85009FBB28 /* InfColorPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1015F315F488B000ABD189 /* InfColorPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,6 +105,7 @@
 		0FB4976115F89BFB009FBB28 /* ITAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10173A15F6187000ABD189 /* ITAssetCell.m */; };
 		0FB4976215F89BFB009FBB28 /* ITAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1016D815F6064C00ABD189 /* ITAlbumPickerController.m */; };
 		0FB4976315F89BFB009FBB28 /* ITImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1016DB15F607D400ABD189 /* ITImagePickerController.m */; };
+		0FB497C215F8BD32009FBB28 /* ITFilterAttributeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB497C115F8BD32009FBB28 /* ITFilterAttributeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -193,6 +196,8 @@
 		0FB4972B15F88645009FBB28 /* ITools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ITools-Info.plist"; sourceTree = "<group>"; };
 		0FB4972D15F88645009FBB28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FB4972F15F88645009FBB28 /* ITools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ITools-Prefix.pch"; sourceTree = "<group>"; };
+		0FB497C015F8BD32009FBB28 /* ITFilterAttributeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFilterAttributeCell.h; sourceTree = "<group>"; };
+		0FB497C115F8BD32009FBB28 /* ITFilterAttributeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITFilterAttributeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +263,7 @@
 			children = (
 				0F1015ED15F488B000ABD189 /* InfoColorPicker */,
 				0F1015A515F47CCB00ABD189 /* CoreFilters */,
+				0F7DA04F1615E18E00A1BFB0 /* ViewControllers */,
 				0F1016CC15F5FF1500ABD189 /* Views */,
 				0F10158E15F4721C00ABD189 /* Supporting Files */,
 				0F10174415F756E500ABD189 /* ImageTools.h */,
@@ -276,18 +282,12 @@
 		0F1015A515F47CCB00ABD189 /* CoreFilters */ = {
 			isa = PBXGroup;
 			children = (
-				0F10160215F4891600ABD189 /* ITFilterSlider.h */,
-				0F10160315F4891600ABD189 /* ITFilterSlider.m */,
 				0F10160415F4891600ABD189 /* ITImageFilterUtils.h */,
 				0F10160515F4891600ABD189 /* ITImageFilterUtils.m */,
 				0F1015A615F47E1200ABD189 /* ITFilter.h */,
 				0F1015A715F47E1200ABD189 /* ITFilter.m */,
-				0F1015A815F47E1200ABD189 /* ITFilterEditorController.h */,
-				0F1015A915F47E1200ABD189 /* ITFilterEditorController.m */,
 				0F1015AA15F47E1200ABD189 /* ITFilterInputAttribute.h */,
 				0F1015AB15F47E1200ABD189 /* ITFilterInputAttribute.m */,
-				0F1015AC15F47E1200ABD189 /* ITFilterListController.h */,
-				0F1015AD15F47E1200ABD189 /* ITFilterListController.m */,
 			);
 			name = CoreFilters;
 			sourceTree = "<group>";
@@ -316,16 +316,31 @@
 		0F1016CC15F5FF1500ABD189 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0F10160215F4891600ABD189 /* ITFilterSlider.h */,
+				0F10160315F4891600ABD189 /* ITFilterSlider.m */,
 				0F10173715F6186F00ABD189 /* ITAssetView.h */,
 				0F10173815F6186F00ABD189 /* ITAssetView.m */,
 				0F10173915F6186F00ABD189 /* ITAssetCell.h */,
 				0F10173A15F6187000ABD189 /* ITAssetCell.m */,
+				0FB497C015F8BD32009FBB28 /* ITFilterAttributeCell.h */,
+				0FB497C115F8BD32009FBB28 /* ITFilterAttributeCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0F7DA04F1615E18E00A1BFB0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F1015A815F47E1200ABD189 /* ITFilterEditorController.h */,
+				0F1015A915F47E1200ABD189 /* ITFilterEditorController.m */,
+				0F1015AC15F47E1200ABD189 /* ITFilterListController.h */,
+				0F1015AD15F47E1200ABD189 /* ITFilterListController.m */,
 				0F1016D715F6064C00ABD189 /* ITAlbumPickerController.h */,
 				0F1016D815F6064C00ABD189 /* ITAlbumPickerController.m */,
 				0F1016DA15F607D400ABD189 /* ITImagePickerController.h */,
 				0F1016DB15F607D400ABD189 /* ITImagePickerController.m */,
 			);
-			name = Views;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		0FB4972915F88645009FBB28 /* ITools */ = {
@@ -363,6 +378,7 @@
 				0FB4975015F89BAB009FBB28 /* ITAssetCell.h in Headers */,
 				0FB4975115F89BAB009FBB28 /* ITAlbumPickerController.h in Headers */,
 				0FB4975215F89BAB009FBB28 /* ITImagePickerController.h in Headers */,
+				0F7DA04E1615DDB800A1BFB0 /* ITFilterAttributeCell.h in Headers */,
 				0FB4975315F89BAB009FBB28 /* ImageTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +525,7 @@
 				0F1016DC15F607D400ABD189 /* ITImagePickerController.m in Sources */,
 				0F10173B15F6187000ABD189 /* ITAssetView.m in Sources */,
 				0F10173C15F6187000ABD189 /* ITAssetCell.m in Sources */,
+				0FB497C215F8BD32009FBB28 /* ITFilterAttributeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7DA04C1615DDAB00A1BFB0 /* ITFilterAttributeCell.m in Sources */,
 				0FB4975415F89BFB009FBB28 /* InfColorBarPicker.m in Sources */,
 				0FB4975515F89BFB009FBB28 /* InfColorIndicatorView.m in Sources */,
 				0FB4975615F89BFB009FBB28 /* InfColorPickerController.m in Sources */,
@@ -764,6 +782,7 @@
 				0FB4976715F89C75009FBB28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

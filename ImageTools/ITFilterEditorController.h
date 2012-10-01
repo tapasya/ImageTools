@@ -10,17 +10,29 @@
 #import "ITFilter.h"
 #import "InfColorPickerController.h"
 #import "ITImagePickerController.h"
+#import "ITFilterAttributeCell.h"
 
-@protocol ITFilterEditorDelegate;
+typedef void (^ITFilterEditingBlock) ( UIImage* image) ;
 
-@interface ITFilterEditorController : UIViewController<UITableViewDelegate, UITableViewDataSource, InfColorPickerControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate, ITImageSelectionDelegte>
--(id)initWithFilter:(ITFilter *)filter;
-@property (unsafe_unretained) id<ITFilterEditorDelegate> delegate;
+/*
+typedef void (^ITFilterDiscardBlock) ();
+
+typedef void (^ITFilterApplyBlock) ();
+
+ */
+
+@interface ITFilterEditorController : UIViewController< UITableViewDelegate,
+                                                        UITableViewDataSource,
+                                                        InfColorPickerControllerDelegate,
+                                                        UIImagePickerControllerDelegate,
+                                                        UINavigationControllerDelegate>
+
+-(id)initWithFilter:(ITFilter *)filter editingBlock:(ITFilterEditingBlock) callbackBlock;
+
+@property (nonatomic, copy) ITFilterEditingBlock filterEditingBlock;
+
 @property (nonatomic, assign) CGSize inputImageSize;
-@end
 
-@protocol ITFilterEditorDelegate
--(void) filterValueChanged:(ITFilter*) pgFilter forKey:(NSString*) key;
--(void) discardFilter;
--(void) applyFilter;
+@property (nonatomic, copy) UIImage* inputImage;
+
 @end
