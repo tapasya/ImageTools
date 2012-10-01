@@ -4,9 +4,6 @@
 > _This is still in early stages of development, so proceed with caution when using this in a production application.  
 > Any bug reports, feature requests, or general feedback at this point would be greatly appreciated._
 
-![Filter List](/screenshots/filterlist.png)
-![Gaussian Blur](/screenshots/gaussianblur.png)
-
 ImageTools is a simple framework which is built on top of iOS Core Image filters. ImageTools enables developers to quickly add image editing capabilities to their apps. 
 Currently the framework doesn't support some of the complex filter attributes which can be modified. Following are the supported and unsupported attributes. 
 
