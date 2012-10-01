@@ -24,6 +24,15 @@ Currently the framework doesn't support some of the complex filter attributes wh
 - `kCIAttributeTypeRectangle`
 - `kCIAttributeTypeBoolean`
 
+## Screenshots
+![Filter List](https://github.com/tapasya/ImageTools/raw/master/screenshots/filterlist.png)
+![Gaussian Blur](https://github.com/tapasya/ImageTools/raw/master/screenshots/gaussianblur.png)
+![Dot Screen](https://github.com/tapasya/ImageTools/raw/master/screenshots/dotscreen.png)
+![Addition](https://github.com/tapasya/ImageTools/raw/master/screenshots/addition.png)
+![Addition1](https://github.com/tapasya/ImageTools/raw/master/screenshots/addition1.png)
+![False Color](https://github.com/tapasya/ImageTools/raw/master/screenshots/falsecolor.png)
+
+
 ## Getting Started
 
 Check out the sample app that is included in the repository. Its a simple demonstration of an app that uses Core Image Filters with `ImageTools` to to apply filters to images.
