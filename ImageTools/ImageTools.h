@@ -1,10 +1,11 @@
-//
+//==============================================================================
 //  ImageTools.h
 //  ImageTools
 //
-//  Created by pramati on 9/5/12.
+//  Created by tapasya on 7/4/12.
+//	Some rights reserved: http://opensource.org/licenses/MIT
 //
-//
+//==============================================================================
 
 #import <Foundation/Foundation.h>
 #import <ImageTools/ITFilter.h>

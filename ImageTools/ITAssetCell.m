@@ -1,9 +1,12 @@
+//==============================================================================
 //
-//  AssetCell.m
+//  ITAssetCell.m
+//  ImageTools
 //
-//  Created by Matt Tuzzolo on 2/15/11.
-//  Copyright 2011 ELC Technologies. All rights reserved.
+//  Created by tapasya on 7/4/12.
+//	Some rights reserved: http://opensource.org/licenses/MIT
 //
+//==============================================================================
 
 #import "ITAssetCell.h"
 #import "ITAssetView.h"

@@ -1,10 +1,12 @@
+//==============================================================================
 //
 //  ITAppDelegate.h
-//  ImageToolsSample
+//  ImageTools
 //
-//  Created by pramati on 9/3/12.
+//  Created by tapasya on 7/4/12.
+//	Some rights reserved: http://opensource.org/licenses/MIT
 //
-//
+//==============================================================================
 
 #import <UIKit/UIKit.h>
 

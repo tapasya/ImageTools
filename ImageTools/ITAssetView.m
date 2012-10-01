@@ -1,3 +1,11 @@
+//==============================================================================
+//  ITAssetView.m
+//  ImageTools
+//
+//  Created by tapasya on 7/4/12.
+//	Some rights reserved: http://opensource.org/licenses/MIT
+//
+//==============================================================================
 
 
 #import "ITAssetView.h"

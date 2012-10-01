@@ -1,10 +1,12 @@
+//==============================================================================
 //
 //  ITAlbumPickerController.m
 //  ImageTools
 //
-//  Created by pramati on 9/4/12.
+//  Created by tapasya on 7/4/12.
+//	Some rights reserved: http://opensource.org/licenses/MIT
 //
-//
+//==============================================================================
 
 #import "ITAlbumPickerController.h"
 #import <AssetsLibrary/AssetsLibrary.h>

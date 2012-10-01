@@ -1,10 +1,12 @@
+//==============================================================================
 //
-//  PGFilterSlider.h
-//  PhotoGrid
+//  ITFilterSlider.h
+//  ImageTools
 //
-//  Created by pramati on 7/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by tapasya on 7/4/12.
+//	Some rights reserved: http://opensource.org/licenses/MIT
 //
+//==============================================================================
 
 #import <UIKit/UIKit.h>
 #import "ITFilter.h"
